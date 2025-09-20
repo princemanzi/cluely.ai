@@ -32,10 +32,18 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(241, 244, 251, 0.6); /* body color (#f1f4fb) with transparency */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(241, 244, 251, 0.6); /* matches your page bg color */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background 0.4s ease;
+  
+  /* smooth fade at the bottom */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
 }
 
 
