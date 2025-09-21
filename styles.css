@@ -45,24 +45,23 @@ header {
 .nav-header {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   /* background-color: #dde2ee;  ❌ remove this */
   background: transparent; /* ✅ transparent instead */
-  padding: 15px 30px;
-  position: relative;
+  padding: 1.5rem 3rem;
   justify-content: space-between;
 }
 
 .icon-with-a {
   cursor: pointer;
   background-color: black;
-  padding: 10px;
-  width: 200px;
+  padding: 1rem;
+  width: 20rem;
   display: flex;
   justify-content: center;
   font-weight: 700;
-  gap: 8px;
-  border-radius: 10px;
+  gap: .8rem;
+  border-radius: 1rem;
 }
 
 .icon-with-a a {
@@ -72,14 +71,20 @@ header {
 .in-header {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
+  justify-content: center;
 }
 
 nav a {
   text-decoration: none;
   color: black;
   font-weight: 500;
-  position: relative;
+}
+
+.in-header a:hover {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .dropdown {
@@ -90,7 +95,7 @@ nav a {
 .dropdown-menu {
   display: flex;
   position: absolute;
-  top: 40px;
+  top: 4rem;
   left: 0;
   background: white;
   padding: 20px;
@@ -112,8 +117,8 @@ nav a {
 }
 
 .dropdown-menu h4 {
-  margin: 0 0 10px;
-  font-size: 14px;
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
   color: gray;
 }
 
@@ -124,8 +129,8 @@ nav a {
 .dropdown-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 1rem;
+  margin-bottom: 1rem;
   padding: 5px;
   cursor: pointer;
 }
@@ -133,28 +138,28 @@ nav a {
 .dropdown-item:hover {
   background-color: #f1f4fb;
   border-radius: 15px;
-  width: 200px;
+  width: 20rem;
   height: fit-content;
 }
 
 .dropdown-item strong {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .dropdown-item p {
   margin: 0;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: gray;
 }
 
 .social-icons {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .social-icons a {
   color: #333;
-  font-size: 20px;
+  font-size: 2rem;
   transition: 0.3s;
 }
 
@@ -165,24 +170,24 @@ nav a {
 .tools div {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .downloads {
   text-decoration: none;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .downloads a {
@@ -193,11 +198,11 @@ nav a {
   cursor: pointer;
   background-color: #2083ed;
   padding: 15px;
-  width: 250px;
+  width: 25rem;
   display: flex;
   justify-content: center;
   font-weight: 800;
-  gap: 5px;
+  gap: .5rem;
   border-radius: 15px;
 }
 
@@ -205,22 +210,22 @@ nav a {
   cursor: pointer;
   background-color: black;
   padding: 15px;
-  width: 250px;
+  width: 25rem;
   display: flex;
   justify-content: center;
   font-weight: 800;
-  gap: 10px;
+  gap: 1rem;
   border-radius: 15px;
 }
 
 .apple-icon {
   color: #fff;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .windows-icon {
   color: #fff;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .hero {
@@ -234,10 +239,10 @@ nav a {
   color: #333;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -2px;
+  letter-spacing: -.2rem;
   font-size: 7.5rem;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 
 .hero p {
@@ -245,15 +250,15 @@ nav a {
   color: #333;
   font-weight: 500;
   font-size: 2.5rem;
-  width: 600px;
-  margin-top: 30px;
+  width: 60rem;
+  margin-top: 3rem;
 }
 
 .question {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   font-size: 1.2rem;
   line-height: 1.4;
 }
@@ -270,18 +275,18 @@ nav a {
 }
 
 .no-texts {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .tags {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .tags-all {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: .8rem;
 }
 .tags-all a {
   color: #333;
@@ -303,23 +308,23 @@ nav a {
 }
 
 .video-1 {
-  width: 1200px;
+  width: 120rem;
   border-radius: 40px;
-  margin-top: 30px;
-  margin-bottom: 80px;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
 }
 
 .hero-2 {
   display: flex;
-  gap: 60px;
-  margin-bottom: 200px;
+  gap: 6rem;
+  margin-bottom: 20rem;
 }
 
 .hero-2 h3 {
   font-weight: 700;
   line-height: 1.4rem;
   font-size: 3.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .hero-2 p {
@@ -328,8 +333,8 @@ nav a {
 }
 
 .video-2 {
-  width: 500px;
-  margin-top: 50px;
+  width: 50rem;
+  margin-top: 5rem;
   border-radius: 30px;
 }
 
@@ -345,7 +350,7 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .color-text {
@@ -429,9 +434,9 @@ nav a {
   display: flex;
   justify-content: center;
   font-weight: 600;
-  gap: 10px;
+  gap: 1rem;
   border-radius: 5px;
-  margin-bottom: 150px;
+  margin-bottom: 15rem;
 }
 
 .downloads-3 a {
@@ -440,7 +445,7 @@ nav a {
 
 .completely {
   font-weight: 200;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .completely h3 {
@@ -451,7 +456,7 @@ nav a {
 
 .completely p {
   font-size: 4.5rem;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: black;
   font-weight: 400;
 }
@@ -459,25 +464,25 @@ nav a {
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 50px;
+  gap: 1rem;
+  margin-bottom: 5rem;
 }
 
 .grid-content {
-  width: 300px;
-  height: 320px;
+  width: 30rem;
+  height: 32rem;
   border-radius: 20px;
 }
 
 .grid-content-1 {
-  width: 350px;
-  height: 320px;
+  width: 35rem;
+  height: 32rem;
 }
 
 .grid-3 p {
   font-size: 2.1rem;
   color: #898c8f;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .strong-asf {
@@ -485,8 +490,8 @@ nav a {
 }
 
 .hero-3 {
-  margin-top: 30px;
-  margin-bottom: 150px;
+  margin-top: 3rem;
+  margin-bottom: 15rem;
   display: flex;
   justify-content: space-between;
 }
@@ -500,7 +505,7 @@ nav a {
 .tools {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 2rem;
   font-weight: 100;
   font-size: 2rem;
 }
@@ -513,46 +518,43 @@ nav a {
   color: #2083ed;
   font-weight: 500;
   font-size: 2.6rem;
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 .hero-4 h1 {
   font-size: 6.5rem;
   color: black;
-  letter-spacing: -2px;
+  letter-spacing: -.2rem;
   line-height: 1.2;
 }
 
 .hero-4 p {
   color: #898c8f;
   font-size: 2.1rem;
-  margin: 30px 0;
+  margin: 3rem 0;
 }
 
 .img-1 {
-  padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 180px;
+  padding: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 18rem;
 }
-
-
 
 .words-only {
   font-weight: 700;
   font-size: 1.8rem;
   color: black;
-  margin-bottom: 200px;
+  margin-bottom: 20rem;
 }
 
 .words-only h1 {
   font-size: 4.5rem;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .words-only > div {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #e0e0e0;
- 
 }
 
 .collapsible {
@@ -566,7 +568,6 @@ nav a {
   width: 100%;
   transition: all 0.3s ease;
 }
-
 
 .collapsible h2 {
   font-size: 2.4rem;
@@ -595,7 +596,7 @@ nav a {
 }
 
 .paragraph.show {
-  max-height: 500px;
+  max-height: 50rem;
   opacity: 1;
   padding: 20px 0 0 0;
 }
@@ -610,7 +611,7 @@ nav a {
 
 hr {
   border: none;
-  height: 1px;
+  height: .1rem;
   background-color: #e0e0e0;
   margin: 0;
 }
@@ -623,14 +624,14 @@ hr {
 .meeting h1 {
   color: #5c7b9c;
   font-size: 3rem;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
-  margin: 40px 0;
+  margin: 4rem 0;
 }
 
 .footer-1 {
@@ -640,8 +641,8 @@ hr {
 .footer-2 {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  gap: 10px;
+  padding: 3rem;
+  gap: 1rem;
 }
 
 .footer-2 a {
@@ -656,12 +657,12 @@ hr {
   display: flex;
   align-items: center;
   background-color: #dfe3ea;
-  gap: 3px;
-  width: 200px;
-  padding: 10px;
+  gap: .3rem;
+  width: 20rem;
+  padding: 1rem;
   border-radius: 5px;
-  height: 30px;
-  margin: 40px 0;
+  height: 3rem;
+  margin: 4rem 0;
 }
 
 .cta-makeup a {
@@ -676,7 +677,7 @@ hr {
   font-size: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: .3rem;
 }
 
 .class-of-h5 a {
@@ -689,20 +690,47 @@ hr {
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
-@media (max-width: 1536px) {
+ @media (max-width: 96rem) {
+  /* 1536px */
+  html {
+    font-size: 50%; /* 8px */
+  }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 80rem) {
+  /* 1280px */
+  html {
+    font-size: 46.875%; /* 7.5px */
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
+  /* 1024px */
+  html {
+    font-size: 43.75%; /* 7px */
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* 768px */
+  html {
+    font-size: 40.625%; /* 6.5px */
+  }
+
+  .hero-2 {
+    flex-direction: column;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 576px) {
-}
+@media (max-width: 36rem) {
+  /* 576px */
+  html {
+    font-size: 37.5%; /* 6px */
+  }
+} 
