@@ -535,37 +535,7 @@ nav a {
   margin-bottom: 180px;
 }
 
-/* .words-only {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: black;
-  margin-bottom: 200px;
-}
 
- .collapsible {
-      position: relative;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      background: #f9f9f9;
-    }
-
-.words-only h1 {
-  font-size: 4.5rem;
-  margin-bottom: 30px;
-}
-.words-only p {
-  color: #898c8f;
-  font-weight: 500;
-}
-
-.words-only hr {
-  margin: 20px 0;
-} */
 
 .words-only {
   font-weight: 700;
@@ -576,14 +546,13 @@ nav a {
 
 .words-only h1 {
   font-size: 4.5rem;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 60px;
 }
 
 .words-only > div {
   margin-bottom: 20px;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 20px;
+ 
 }
 
 .collapsible {
@@ -592,16 +561,12 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   background: transparent;
   border: none;
   width: 100%;
   transition: all 0.3s ease;
 }
 
-.collapsible:hover {
-  color: #2083ed;
-}
 
 .collapsible h2 {
   font-size: 2.4rem;
@@ -618,7 +583,6 @@ nav a {
 
 .collapsible.active i {
   transform: rotate(180deg);
-  color: #2083ed;
 }
 
 .paragraph {
@@ -627,6 +591,7 @@ nav a {
   transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
   opacity: 0;
   padding: 0 0 0 0;
+  margin-bottom: 5px;
 }
 
 .paragraph.show {
