@@ -31,7 +31,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(241, 244, 251, 0.6); /* body color (#f1f4fb) with transparency */
+  background: rgba(
+    241,
+    244,
+    251,
+    0.6
+  ); /* body color (#f1f4fb) with transparency */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -365,7 +370,7 @@ nav a {
   animation: gradientShift 4s ease-in-out infinite;
 }
 
- .color-text:nth-of-type(2) {
+.color-text:nth-of-type(2) {
   background: linear-gradient(
     45deg,
     #667eea,
@@ -530,12 +535,24 @@ nav a {
   margin-bottom: 180px;
 }
 
-.words-only {
+/* .words-only {
   font-weight: 700;
   font-size: 1.8rem;
   color: black;
   margin-bottom: 200px;
 }
+
+ .collapsible {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+    }
 
 .words-only h1 {
   font-size: 4.5rem;
@@ -548,9 +565,90 @@ nav a {
 
 .words-only hr {
   margin: 20px 0;
+} */
+
+.words-only {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: black;
+  margin-bottom: 200px;
 }
 
+.words-only h1 {
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
+.words-only > div {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.collapsible {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.collapsible:hover {
+  color: #2083ed;
+}
+
+.collapsible h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+.collapsible i {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  color: #898c8f;
+}
+
+.collapsible.active i {
+  transform: rotate(180deg);
+  color: #2083ed;
+}
+
+.paragraph {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  opacity: 0;
+  padding: 0 0 0 0;
+}
+
+.paragraph.show {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px 0 0 0;
+}
+
+.paragraph p {
+  color: #898c8f;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0;
+}
 
 .meeting h2 {
   color: black;
@@ -592,7 +690,7 @@ nav a {
 .cta-makeup {
   display: flex;
   align-items: center;
-  background-color:#dfe3ea;
+  background-color: #dfe3ea;
   gap: 3px;
   width: 200px;
   padding: 10px;
@@ -621,14 +719,13 @@ nav a {
   color: #2083ed;
 }
 
-.closing{
+.closing {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
   margin: 10px 0;
 }
-
 
 @media (max-width: 1536px) {
 }
